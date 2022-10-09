@@ -1,0 +1,136 @@
+* {
+  background-color: black;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+button {
+  border: 1px solid  white;
+  border-radius: 2px;
+  font-size: x-large;
+  font-weight: bold;
+  display: inline-block;
+  margin: 10px;
+}
+
+#highscore {
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+  font-weight: bolder;
+  background-color:white;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+#highscores-list {
+  list-style: none;
+  font-size: large;
+}
+
+#start {
+  border: 2px solid  white;
+  border-radius: 2px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+
+#start-screen {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 40%;
+}
+
+#timer {
+  margin-left: 6px;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+#highscores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#highscores-list li {
+  font-size: 24px;
+  margin: 10px;
+}
+
+.score-container {
+  display: inline-block;
+  padding: 20px;
+}
+
+
+.time-container {
+  padding-left: 75%;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.wrong{
+  font-weight: bolder;
+  font-size: x-large;
+  color: white;
+  background-color: darkred;
+  border: 5px solid darkred;
+  border-radius:  2px;
+  margin: 0 450px;
+}
+
+.correct{
+  font-weight: bolder;
+  font-size: x-large;
+  color: white;
+  background-color: darkgreen;
+  border: 5px solid darkgreen;
+  border-radius:  2px;
+  margin: 0 450px;
+}
+
+button:hover {
+  border: 1px solid  white;
+  border-radius:  2px;
+  font-size: x-large;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+}
+
+
+#start:hover {
+  border: 5px solid white;
+  border-radius:  2px;
+  font-size: x-large;
+  font-weight: bold;
+  background-color: white;
+  color: black ;
+}
+
+#highscore:hover {
+  border: 5px solid  white;
+  font-size: x-large;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+}
