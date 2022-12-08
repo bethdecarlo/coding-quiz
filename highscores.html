@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>High scores</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./Assets/style.css">
-    <title> Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <div class="container">
-       <div id="highscores">
-        <h1>High Scores</h1>
-        <ul id="highscores-list"></ul>
-        <div>
-            <a href="./index.html"><button>Go Back</button></a>
-            <button id="clr-scores">Clear Highscores</button>    
+    <main>
+        <div class="wrapper">
+            <h1>High scores</h1>
+            <ul id="highscores"></ul>
+
+            <nav class="highscores-nav">
+                <a href="index.html" style="text-decoration: none;"><button class="button-style">Go Back</button></a>
+                <button id="clear" class="button-style">Clear All High scores</button></nav>
         </div>
-       </div>
-       
-    </div>
-    <script src="./Assets/js/highscores.js"></script>
+    </main>
+    <script src="./assets/js/scores.js"></script>
 </body>
 
 </html>
