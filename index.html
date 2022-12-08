@@ -1,52 +1,60 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Quiz</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./Assets/style.css">
-    <title> Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
 
-    <div class="score-container">
-        <a id="highscore" href="./highscores.html">Leaderboards</a>
-    </div>
+    <header>
+        
+        <a class="highscore-link header-content" href="./highscores.html">View Highscores</a>
+        <h3 class="header-content">Time: <span id="timer">00</span></h3>
+    </header>
 
-    <div class="time-container">
-        <p>Your Current Score:<span id="timer"></span></p>
-    </div>
+    <main>
+        <div class="wrapper">
 
-    <div class="main-container">
-        <div id="start-screen" class="show">
-            <h1>Coding Quiz</h1>
-            <p>Try to answer the following code-related questions within the time limit. </p>
-            <p>Keep in mind that every time you answer a question incorrectly, 10 points will be removed from your score.</p>
-            <div><button id="start">Start Quiz</button></div>
+            <div id="start-screen" class="menu">
+                <h1>Coding Quiz Challenge</h1>
+                <p class="p-menu">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                <button id="start-button" class="button-style">Start Quiz</button>
+            </div>
+
+            <div id="questions" class="hide">
+                <h2 id="question-title">Filler text?</h2>
+                <div id="choices" class="choices">
+                    <button id ="choice1" class="button-style answer-button">Filler 1</button>
+                    <button id ="choice2" class="button-style  answer-button">Filler 2</button>
+                    <button id ="choice3" class="button-style  answer-button">Filler 3</button>
+                    <button id ="choice4" class="button-style  answer-button">Filler 4</button>
+                </div>
+            </div>
+
+            <div id="end-screen" class="menu hide">
+                <h1>All done!</h1>
+                <p class="p-menu">Your final score is <span id="final-score">00</span>.</p>
+                <p class="p-menu">Enter initials: <input type="text" id="initials" maxlength="3" /></p>
+                <button id="submit-button" class="button-style">Submit</button>
+            </div>
+
+            <div id="feedback" class="feedback hide">
+                <p id="feedback">test</p>
+            </div>
         </div>
+    </main>
 
-        <div id="questions" class="hide">
-            <h2 id="question-titles">Question Title</h2>
-            <div id="choices"><ol>
-
-            </ol></div>
-        </div>
-
-        <div id="end-screen" class="hide">
-            <h2>Time's up!</h2>
-            <p> Great job! Your score is <span id="final-score">.</span></p>
-            <p>
-                Enter Your Initials: <input type="text" id="initials" max="3" />
-                <button id="submit">Submit</button>
-            </p>
-        </div>
-
-        <div id="feedback" class="feedback hide"></div>
-    </div>
-
-    <script src="./Assets/js/script.js"></script>
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/logic.js"></script>
 </body>
+
 </html>
