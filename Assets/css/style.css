@@ -1,0 +1,139 @@
+
+:root {
+  --primary: #8cbf5f;
+  --white: #fffff;
+  --black: black;
+}
+
+*, body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--primary);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: xx-large;
+  font-weight: bolder;
+  color: var(--black);
+}
+
+h2 {
+  margin: 0px 10px 20px 10px;
+  font-size: x-large;
+  font-weight: bold;
+  color: var(--primary)
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-menu {
+  padding: 10px;
+  text-align: center;
+  font-size: large;
+}
+
+.header-content {
+  color: var(--black);
+  line-height: 25px;
+  margin: 0 10px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.highscore-link {
+  text-decoration: none;
+  position: relative;
+  color:black
+}
+.highscore-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  transition: all 0.3s;
+}
+.highscore-link:hover::after {
+  width: 100%; 
+  left: 0; 
+  background: var(--primary);
+}
+
+.wrapper {
+ 
+  border: 3px solid var(--primary);
+  border-radius: 5px;
+  width: 800px;
+  max-width: 80%;
+  padding: 20px;
+  background-color: white;
+  
+}
+
+.hide {
+  display: none;
+}
+
+.button-style {
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+  background-color: var(--primary);
+  color: white;
+  font-size: large;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.button-style:hover {
+  filter: opacity(60%)
+}
+.answer-button {
+  margin: 10px;
+  padding: 5px 10px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+.highscores-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
+
+  
+}
+
+.list-style {
+  display: block;
+  padding: 3px;
+  font-size: large;
+  
+}
+
